@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmeto</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/q.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="Marmeto Logo"> <!-- Replace with your logo image -->
+            <!-- <span>Marmeto</span> -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-heart"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </nav>
+
+    <section class="background1-section">
+        <div class="banner">
+            <img src="./assets/images/background.jpg" alt="Banner Image" class="banner-image">
+        </div>
+        <div class="content">
+            <img src="./assets/images/q.png" alt="Marmeto Logo">
+            <h1>Cart</h1>
+            <p>Home > cart</p>
+        </div>
+    </section>
+
+    <div class="cart-container">
+        <div class="cart-items">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cart-item">
+                        <td class="product-info">
+                            <img src="./assets/images/sofa.png" alt="Product">
+                            <span>Asgaard Sofa</span>
+                        </td>
+                        <td>Rs. 250,000.00</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                        </td>
+                        <td class="subtotal">Rs. 250,000.00</td>
+                        <td>
+                            <button class="delete-button">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cart-totals">
+            <h3>Cart Totals</h3>
+            <div class="totals-row">
+                <span>Subtotal</span>
+                <span class="totals-subtotal">Rs. 250,000.00</span>
+            </div>
+            <div class="totals-row">
+                <span>Total</span>
+                <span class="totals-total">Rs. 250,000.00</span>
+            </div>
+            <button id="checkout-btn">Check Out</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <img src="assets/icons/quality.svg" alt="High Quality">
+
+                <div class="feature-title">High Quality</div>
+                <div class="feature-description">crafted from top materials</div>
+            </div>
+            <div class="footer-item">
+                <img src="assets/icons/warranty.svg" alt="Warranty Protection">
+                <div class="feature-title">Warranty Protection</div>
+                <div class="feature-description">Over 2 years</div>
+            </div>
+            <div class="footer-item">
+                <img src="assets/icons/shipping.svg" alt="Free Shipping">
+                <div class="feature-title">Free Shipping</div>
+                <div class="feature-description">Order over 150 $</div>
+            </div>
+            <div class="footer-item">
+                <img src="assets/icons/support.svg" alt="24/7 Support">
+                <div class="feature-title">24 / 7 Support</div>
+                <div class="feature-description">Dedicated support</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+    <!-- <script src="./js/app.js"></script> -->
+    <script src="./data/cart.json"></script>
+</body>
+
+</html>
